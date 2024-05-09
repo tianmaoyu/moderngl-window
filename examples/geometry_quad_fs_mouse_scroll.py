@@ -26,7 +26,7 @@ class QuadFullscreenScroll(moderngl_window.WindowConfig):
         self.prog['offset'] = -self.mouse_pos[0] / self.wnd.buffer_width, self.mouse_pos[1] / self.wnd.buffer_height
         self.quad.render(self.prog)
 
-    def mouse_position_event(self, x, y, dx, dy):
+    def mouse_drag_event(self, x, y, dx, dy):
         self.mouse_pos = self.mouse_pos[0] + dx, self.mouse_pos[1] + dy
         print(self.mouse_pos)
 

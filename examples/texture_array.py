@@ -18,7 +18,7 @@ class TextureArrayExample(CameraWindow):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.wnd.mouse_exclusivity = True
+        self.wnd.mouse_exclusivity = False
         self.num_layers = 10
         self.cube = geometry.cube(size=(2, 2, 2))
         self.texture = self.load_texture_array(

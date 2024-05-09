@@ -14,7 +14,7 @@ class Cubemap(CameraWindow):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.wnd.mouse_exclusivity = True
+        self.wnd.mouse_exclusivity = False
         self.cube = geometry.cube(size=(20, 20, 20))
         self.texture = self.load_texture_cube(
             neg_x='textures/cubemaps/yokohama/posx.jpg',

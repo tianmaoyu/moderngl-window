@@ -15,7 +15,7 @@ class OrbitCamCrate(OrbitCameraWindow):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.wnd.mouse_exclusivity = True
+        self.wnd.mouse_exclusivity = False
 
         self.scene = self.load_scene('scenes/crate.obj')
 

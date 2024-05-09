@@ -19,8 +19,8 @@ from typing import Tuple
 from array import array
 
 import moderngl
-from moderngl.program_members import varying
-from pyrr.matrix44 import inverse
+# from moderngl.program_members import varying
+# from pyrr.matrix44 import inverse
 from moderngl_window import geometry
 from base import CameraWindow
 from pyrr import Matrix44, Matrix33

@@ -24,7 +24,7 @@ class CameraWindow(mglw.WindowConfig):
             if key == keys.SPACE:
                 self.timer.toggle_pause()
 
-    def mouse_position_event(self, x: int, y: int, dx, dy):
+    def mouse_drag_event(self, x: int, y: int, dx, dy):
         if self.camera_enabled:
             self.camera.rot_state(-dx, -dy)
 
@@ -54,7 +54,7 @@ class OrbitCameraWindow(mglw.WindowConfig):
             if key == keys.SPACE:
                 self.timer.toggle_pause()
 
-    def mouse_position_event(self, x: int, y: int, dx, dy):
+    def mouse_drag_event(self, x: int, y: int, dx, dy):
         if self.camera_enabled:
             self.camera.rot_state(dx, dy)
 
