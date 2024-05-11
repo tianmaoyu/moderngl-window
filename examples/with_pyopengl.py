@@ -7,10 +7,11 @@ class PyOpenGL(moderngl_window.WindowConfig):
     gl_version = (3, 3)
     title = "PyOpenGL"
 
-    def __init__(self, **kwargs):
-        super().__init__(**kwargs)
+    # def __init__(self, **kwargs):
+    #     super().__init__(**kwargs)
 
     def render(self, time, frametime):
+
         GL.glClearColor(
             (math.sin(time) + 1.0) / 2,
             (math.sin(time + 2) + 1.0) / 2,

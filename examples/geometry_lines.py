@@ -20,7 +20,7 @@ class LinesDemo(CameraWindow):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.wnd.mouse_exclusivity = True
+        self.wnd.mouse_exclusivity =False
 
         self.prog = self.load_program('programs/lines/lines.glsl')
         self.prog['color'].value = (1.0, 1.0, 1.0, 1.0)

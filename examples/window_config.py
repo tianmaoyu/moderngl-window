@@ -7,8 +7,8 @@ class BasicWindowConfig(moderngl_window.WindowConfig):
     gl_version = (3, 3)
     title = "Basic Window Config"
 
-    def __init__(self, **kwargs):
-        super().__init__(**kwargs)
+    # def __init__(self, **kwargs):
+    #     super().__init__(**kwargs)
 
     def render(self, time, frametime):
         self.ctx.clear(

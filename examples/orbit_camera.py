@@ -20,7 +20,7 @@ class OrbitCamCrate(OrbitCameraWindow):
         self.scene = self.load_scene('scenes/crate.obj')
 
         self.camera.projection.update(near=0.1, far=100.0)
-        self.camera.mouse_sensitivity = 0.75
+        self.camera.mouse_sensitivity = 1
         self.camera.zoom = 2.5
 
     def render(self, time: float, frametime: float):
